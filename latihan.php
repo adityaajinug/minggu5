@@ -16,15 +16,16 @@
         <div class="col">
                 <form action="proseslat.php" name="inputan" method="post">
                     <div class="form-group row">
-                        <label class="col-sm-2 col-form-label">NIM</label>
+                        <label for="nim" class="col-sm-2 col-form-label">NIM</label>
                         <div class="col-sm-10">
-                            <input type="text" class="form-control" name="nim">
+                            <input type="text" class="form-control" id="nim" name="nim" Required>
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label class="col-sm-2 col-form-label">Program Studi</label>
+                        <label for="prodi" class="col-sm-2 col-form-label">Program Studi</label>
                         <div class="col-sm-10">
-                            <select class="form-control" name="prodi">
+                            <select class="form-control" id="prodi" name="prodi" Required>
+                                <option >--Pilih Prodi--</option>
                                 <option value="Teknik Informatika">Teknik Informatika</option>
                                 <option value="Sistem Informasi">Sistem informasi</option>
                                 <option value="Teknik Informatika D3">Teknik Informatika D3</option>
@@ -32,54 +33,54 @@
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label class="col-sm-2 col-form-label">Nilai Tugas</label>
+                        <label for="nt" class="col-sm-2 col-form-label">Nilai Tugas</label>
                         <div class="col-sm-10">
-                            <input type="number" class="form-control" name="tugas">
+                            <input type="number" class="form-control" id="nt" name="tugas" Required>
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label class="col-sm-2 col-form-label">Nilai UTS</label>
+                        <label for="nuts" class="col-sm-2 col-form-label">Nilai UTS</label>
                         <div class="col-sm-10">
-                            <input type="number" class="form-control" name="uts">
+                            <input type="number" class="form-control" id="nuts" name="uts" Required>
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label class="col-sm-2 col-form-label">Nilai UAS</label>
+                        <label for="nuas" class="col-sm-2 col-form-label">Nilai UAS</label>
                         <div class="col-sm-10">
-                            <input type="number" class="form-control" name="uas">
+                            <input type="number" class="form-control" id="nuas" name="uas" Required>
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label class="col-sm-2 col-form-label">Catatan Khusus</label>
+                        <label for="catsus" class="col-sm-2 col-form-label">Catatan Khusus</label>
                         <div class="form-check mt-2">
                             <div class="col-sm-10">
-                                <input class="form-check-input" type="checkbox"  name="check_list[]" value="Kehadiran >=70%" >
+                                <input class="form-check-input" type="checkbox" id="catsus"  name="check_list[]" value="Kehadiran >=70%"  checked="checked" required>
                                 Kehadiran >=70% 
                             </div>
                         </div>
                     </div>
                     <div class="form-group row">
-                    <label class="col-sm-2 col-form-label"></label>
+                    <label for="catsus" class="col-sm-2 col-form-label"></label>
                         <div class="form-check mt-2">
                             <div class="col-sm-10">
-                                <input class="form-check-input" type="checkbox" name="check_list[]" value="interaktif dikelas">
+                                <input class="form-check-input" type="checkbox" id="catsus" name="check_list[]" value="interaktif dikelas">
                                 Interaktif dikelas
                             </div>
                         </div>
                     </div>
                     <div class="form-group row">
-                    <label class="col-sm-2 col-form-label"></label>
+                    <label for="catsus" class="col-sm-2 col-form-label"></label>
                         <div class="form-check mt-2">
                             <div class="col-sm-10">
-                                <input class="form-check-input" type="checkbox" name="check_list[]" value="Tidak terlambat mengumpulkan tugas">
+                                <input class="form-check-input" type="checkbox" id="catsus" name="check_list[]" value="Tidak terlambat mengumpulkan tugas">
                                 Tidak terlambat mengumpulkan tugas
                             </div>
                         </div>
                     </div>
                     <div class="form-group row">
-                    <label class="col-sm-2 col-form-label"></label>
+                    <label id="simpan" class="col-sm-2 col-form-label"></label>
                     <div class="col-sm-10">
-                    <button type="submit" class="btn btn-primary" name="simpan" value="simpan">Simpan</button>
+                    <button type="submit" class="btn btn-primary" id="simpan" name="simpan" value="simpan">Simpan</button>
                     </div>
                 </form>
         </div>
