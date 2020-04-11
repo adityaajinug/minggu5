@@ -13,7 +13,7 @@ class foo {
         
     }
 }
-$foo = new foo;
+$foo = new foo();
 $name = 'Achmatim';
 echo <<<EOT
     <u>$str</u><br>
